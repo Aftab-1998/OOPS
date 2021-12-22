@@ -58,5 +58,12 @@ namespace Oops
 
         }
 
+        public void Add(int amount, string name)
+        {
+            stocklist.Add(new Stock { });
+            Console.WriteLine($"the share name : {name}");
+
+        }
+
     }
 }
