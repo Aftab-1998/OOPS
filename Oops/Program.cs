@@ -6,15 +6,22 @@ List<Stock> stocks = new List<Stock>()
 {
     new Stock()
     {
-        Price = 10, Name = "Gold", nostocks  = 5, Symbol = "Gold.Pic"
+        Price = 10, Name = "Bajaj", nostocks  = 5, Symbol = "Bajaj.Pic"
 
     },
     new Stock()
     {
-        Name = "Sliver", Price = 20, Symbol = "Sliver.coc", nostocks = 10
-    }
+        Name = "Flipkart", Price = 20, Symbol = "Flipkart.coc", nostocks = 10
+    },
+    
 };
 
- StockMangement stockMangement = new StockMangement();
-stockMangement.CalutateTotalValue(stocks);
+ StockMangement stockMangement = new StockMangement(stocks);
+
+stockMangement.CalutateTotalValue();
+stockMangement.Buy(100, "Bajaj");
+stockMangement.Sell(40, "Flipkart");
+stockMangement.PrintReport(20, "Flipkart,Bajaj");
+
+
 
